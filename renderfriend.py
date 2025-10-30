@@ -13,19 +13,18 @@ def dotCleanup():
 
 def main():
     
-    test = 'DOT/sample.dot'
+    renderList = os.listdir("DOT")
 
-    # Load the DOT file
-    # dots = Source.from_file(test)
-    dots = Source.from_file(filename="sample.dot", directory = "DOT")
+    for renderMe in renderList:
+        # dots = Source.from_file(test)
+        dots = Source.from_file(renderMe, directory="DOT")
 
-    # Render the graph to an SVG file
-    # The output file will be named 'my_graph.gv.svg' by default, 
-    # or you can specify a different filename in the render() method.
-    dots.render(format='svg', view=True, directory = "SVG")
+        # Render the graph to an SVG file
+        # The output file will be named 'my_graph.gv.svg' by default, 
+        # or you can specify a different filename in the render() method.
+        dots.render(format='svg', view=False, directory="SVG")
 
-    #graphviz.render(test, "svg", "SVG/" + "blah.svg")
-    print(f"SVG generated from '{test}'")
+        print(f"SVG generated from '{renderMe}'")
 
     dotCleanup()
 
