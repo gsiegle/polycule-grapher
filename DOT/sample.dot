@@ -1,8 +1,8 @@
 graph sample {
-	node1 [label="Transform 1"]
-	node2 [label="Transform 2"]
-	node3 [label="Transform 3"]
-	node4 [label="Transform 4"]
+	node1 [label="A"]
+	node2 [label="B"]
+	node3 [label="C"]
+	node4 [label="D"]
 
 	node1 -- node2 [len=1.25,label="",style=bold]
 	node1 -- node3 [len=1.25,label="",style=bold]
