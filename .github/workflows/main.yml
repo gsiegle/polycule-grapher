@@ -3,7 +3,7 @@ name: Rerender Graphs
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   getdataandrefreshmap:
