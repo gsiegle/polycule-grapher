@@ -1,11 +1,14 @@
 graph sample {
-	node1 [label="A"]
-	node2 [label="B"]
-	node3 [label="C"]
+	node1 [label="Greg"]
+	node2 [label="Yubin"]
+	node3 [label="Sebastian"]
 	node4 [label="D"]
+	node5 [label="Steve"]
+	node6 [label="Bonnie"]
 
 	node1 -- node2 [len=1.25,label="",style=bold]
-	node1 -- node3 [len=1.25,label="",style=bold]
+	node2 -- node3 [len=1.25,label="",style=bold]
 	node2 -- node4 [len=1.25,label="",style=bold]
-	node3 -- node4 [len=1.25,label="",style=bold]
+    node1 -- note6 [len=1.25,label="",style=bold]
+	node5 -- note6 [len=1.25,label="",style=bold]
 }
