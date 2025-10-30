@@ -1,0 +1,11 @@
+graph sample {
+	node1 [label="Better 1"]
+	node2 [label="New 2"]
+	node3 [label="New 3"]
+	node4 [label="New 4"]
+
+	node1 -- node2 [len=1.25,label="",style=bold]
+	node1 -- node3 [len=1.25,label="",style=bold]
+	node2 -- node4 [len=1.25,label="",style=bold]
+	node3 -- node4 [len=1.25,label="",style=bold]
+}
