@@ -6,9 +6,11 @@ on:
       - main
 
 jobs:
-  getdataandrefreshmap:
+  refresh-renders:
     runs-on: ubuntu-latest
     steps:
+      - name: Setup Graphviz
+        uses: ts-graphviz/setup-graphviz@v1 # Use the setup-graphviz action
       - name: checkout repo content
         uses: actions/checkout@v3 # checkout the repository content to github runner.
       - name: setup python
